@@ -9,6 +9,13 @@ module.exports = {
     volta: {
       url: process.env.API_URL,
       accounts: [`0x${process.env.PRIVATE_KEY}`],
-    }
+    },
+    ganache: {
+      url: "http://127.0.0.1:7545",
+      chainId: 1337,
+      accounts: [
+        "0xefc4e649fa7d2893926afc441acddce603e129aeeaaab50256b1d998a9ea162b",
+      ],
+    },
   },
 };
